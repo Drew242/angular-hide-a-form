@@ -13,8 +13,8 @@ function profileCtrl($http) {
   profile.showBtn   = true;
   profile.hideBtn   = false;
   profile.name      = 'Samuel L. Jackson';
-  profile.bio       = "You don't know me";
-  profile.books     = 'Catcher in the Rye';
+  profile.bio       = "Oh, I'm sorry. Did I break your concentration?";
+  profile.books     = 'Ezekiel 25:17';
   profile.libraries = 'Angula Mutha Fucka';
 
   profile.showForm  = function() {
