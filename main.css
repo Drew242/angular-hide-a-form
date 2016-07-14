@@ -1,0 +1,52 @@
+body {
+  padding: 2%;
+}
+
+.gutter {
+  background-color: black;
+  padding: 1em;
+  height: 50em;
+  margin-bottom: 2em;
+}
+
+.redder {
+  background-color: #ff4d4d;
+  height: 10em;
+  margin-top: 1em;
+}
+
+.yellower {
+  background-color: #ffd633;
+  height: 20em;
+  margin-top: 16em;
+}
+
+.btnForm {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  padding: 1%;
+}
+
+#profPic {
+  border: 1px solid white;
+  border-radius: 50%;
+  float: left;
+  margin-right: 3%;
+}
+
+.profileShow {
+  background-color: black;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.wrapper {
+  color: #ff4d4d;
+}
+
+.content {
+  color: #ffd633;
+}

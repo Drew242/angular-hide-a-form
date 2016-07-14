@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="profileApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="profile.js"></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='main.css'/>
+  </head>
+
+  <body ng-controller="profile as profile">
+    <div class='container'>
+
+    <div class='col-md-3 gutter'>
+      <div class='col-md-12 redder'>
+      </div>
+      <div class='col-md-12 yellower'>
+      </div>
+    </div>
+
+    <div class='col-md-6 col-md-offset-1 btnForm'>
+      <button class='btn btn-danger' ng-click='profile.showForm()'>Show Form</button>
+    </div>
+
+    <div class='col-md-6 col-md-offset-1 form' ng-show='profile.btnClick'>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Sam Jackson">
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <input type="email" class="form-control" id="bio" placeholder="write shit about yo self">
+        </div>
+        <div class="form-group">
+          <label for="books">Book</label>
+          <input type="email" class="form-control" id="books" placeholder="What books do you like!?">
+        </div>
+        <div class="form-group">
+          <label for="libraries">JS Libraries</label>
+          <input type="email" class="form-control" id="libraries" placeholder="Angular!? Meteor!? Ember!? What!?">
+        </div>
+        <button class="btn btn-warning">Send It!</button>
+      </form>
+    </div>
+
+    <div class='container-fluid'>
+      <div class='col-md-6 col-md-offset-1 profileShow'>
+        <hr>
+          <img id='profPic' src="sljackson.png"/>
+            <div class='wrapper'>
+              <h3>Name: <span class="content">{{ profile.name }}</span></h3>
+              <p>Bio: <span class="content">{{ profile.bio }}</span></p>
+              <p>Favorite Books: <span class="content">{{ profile.books }}</span></p>
+              <p>Favorite JS Libraries: <span class="content">{{ profile.libraries }}</span></p>
+            </div>
+        <hr>
+      </div>
+    </div>
+
+    </div>
+
+  </body>
+</html>
